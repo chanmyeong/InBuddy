@@ -1,6 +1,6 @@
 ## [InBuddy ✈ 접속하기!](https://inbuddy.site:1110/login)
 
-![image](/uploads/200b10dfcefc10a61313e028c304b701/image.png)
+![로고](/etc/pngs/InBuddy%20logo.png)
 
 <br>
 
@@ -40,7 +40,7 @@
 
 ###### So that there's no disruption to your journey **InBuddy**
 
-<br>
+<!-- <br>
 
 ### 📼UCC
 
@@ -48,7 +48,7 @@
 
 [![이미지 텍스트](/uploads/283946223a961b6b0b5d85c3b9c9a5be/image.png)](https://drive.google.com/file/d/1I8hpLC0rNQqLs66ZnpKi5NPBKmFfAvZa/view?usp=sharing)
 
-_위의 사진을 클릭하면 영상 링크로 이동합니다._
+_위의 사진을 클릭하면 영상 링크로 이동합니다._ -->
 
 <br>
 
@@ -84,7 +84,7 @@ _위의 사진을 클릭하면 영상 링크로 이동합니다._
 
 <br>
 
-![image](/uploads/79b8820ee54a6e898b06db6f5e3b1ad5/image.png)
+![구현 사항](/etc/pngs/InBuddy%20구현사항.png)
 
 1. 여정을 등록하고 관리
 
@@ -142,7 +142,7 @@ InBuddy의 경우 비행기 지연 예측할 때 항공편명, 항공사 등 범
 
 ---
 
-![image](/uploads/849dbd3acd604e07eb4603eea30be724/image.png)
+![시스템 아키텍처](/etc/pngs/InBuddy%20시스템%20아키텍처.png)
 
 <br>
 
@@ -212,28 +212,28 @@ Jenkins
 
 ##### 요구사항 정의, 기능 명세서
 
-![image](/uploads/a0633958c08558f444783307d56dbe80/image.png)
+![산출물](/etc/pngs/InBuddy%20기획%20및%20설계%20산출물.png)
 
 ###### 용어 정리
 
--   `여정 컬렉션`: 사용자의 지난 여정부터 예정된 여정까지 모든 여정이 담겨있는 컬렉션입니다.
--   `준비물 리스트`: 사용자가 공항에 도착하기 전 챙겨야 할 준비물(ITEM) 리스트입니다.
-    -   여권, 지갑 등 필수적으로 준비해야 하는 준비물은 제공됩니다.
-    -   추가로 준비할 준비물을 사용자가 추가할 수 있습니다.
-    -   등록된 모든 준비물을 준비했다고 표시하면, `점검 리스트`의 준비물 점검 사항이 완료됩니다.
--   `점검 리스트`: 사용자가 출국 전 공항에서 완료해야 할 점검(TASK) 리스트입니다.
-    -   준비물 점검, 발권 등 필수적으로 완료해야 하는 점검 사항은 제공됩니다. 제공된 점검 사항은 돌발 상황 시 대처할 요령 또한 제공합니다.
-    -   추가로 완료해야할 점검 사항을 사용자가 추가할 수 있습니다. 하지만 사용자가 직접 추가한 점검 사항에는 대처 요령은 제공되지 않습니다.
-    -   모든 점검 사항을 완료하면, 최종 완료 버튼이 활성화됩니다.
-    -   최종 완료 버튼을 누르면 항공편의 운항 현황에 따라 _정상 운항 페이지_ 또는 *비정상 운항 페이지*로 넘어갑니다.
+- `여정 컬렉션`: 사용자의 지난 여정부터 예정된 여정까지 모든 여정이 담겨있는 컬렉션입니다.
+- `준비물 리스트`: 사용자가 공항에 도착하기 전 챙겨야 할 준비물(ITEM) 리스트입니다.
+  - 여권, 지갑 등 필수적으로 준비해야 하는 준비물은 제공됩니다.
+  - 추가로 준비할 준비물을 사용자가 추가할 수 있습니다.
+  - 등록된 모든 준비물을 준비했다고 표시하면, `점검 리스트`의 준비물 점검 사항이 완료됩니다.
+- `점검 리스트`: 사용자가 출국 전 공항에서 완료해야 할 점검(TASK) 리스트입니다.
+  - 준비물 점검, 발권 등 필수적으로 완료해야 하는 점검 사항은 제공됩니다. 제공된 점검 사항은 돌발 상황 시 대처할 요령 또한 제공합니다.
+  - 추가로 완료해야할 점검 사항을 사용자가 추가할 수 있습니다. 하지만 사용자가 직접 추가한 점검 사항에는 대처 요령은 제공되지 않습니다.
+  - 모든 점검 사항을 완료하면, 최종 완료 버튼이 활성화됩니다.
+  - 최종 완료 버튼을 누르면 항공편의 운항 현황에 따라 _정상 운항 페이지_ 또는 *비정상 운항 페이지*로 넘어갑니다.
 
 ##### ERD
 
-![image](/uploads/1dcf6817fcb92d3579e3d22973694c6c/image.png)
+![ERD](/etc/pngs/InBuddy%20ERD.png)
 
 ##### 와이어 프레임
 
-![image](/uploads/345b24f20aeb046f0ef31d33f1f0149c/image.png)
+![WireFrame](/etc/pngs/InBuddy%20WireFrame.png)
 
 <br>
 
@@ -241,44 +241,44 @@ Jenkins
 
 ---
 
--   김금환 `팀장`
-    -   `BE`, `발표`
-    -   ERD 설계
-    -   Hadoop, Spark Cluster 구축
-    -   Spark에서 Kafka로부터 과거 항공편 데이터를 가져와 Hadoop HDFS에 누적 적재
-    -   Redis에 저장된 항공 데이터 Spring Boot와 연동
--   김성민
-    -   `FE`
-    -   피그마 와이어 프레임 설계
-    -   PWA
-    -   여정 리스트, 여권, 로밍, 환전 대처 페이지 구현
-    -   Adobe illustrator 을 사용한 인천공항 내부 지도 및 주요 편의시설 마커가 포함된 svg 파일 제작
-    -   react-panning-zoom libary를 사용한 인천공항 내부 지도 줌, 드래그 기능 구현
--   우찬명
-    -   `FE`
-    -   피그마 와이어 프레임 설계
-    -   PWA
-    -   tanstack query
-    -   redux toolkit 스켈레톤 템플릿 코드 구현
-    -   점검 리스트, 준비물 리스트 구현
--   임서정
-    -   `BE`, `FE`
-    -   oauth2, jwt, spring security 활용한 소셜 로그인
-    -   항공, 날씨 데이터 수집
-    -   zxing library 활용한 항공편 정보 추출 및 가공
-    -   UCC 편집
--   오상훈
-    -   `Infra`, `BE`, `ML`
-    -   데이터 수집
-    -   배포 자동화
-    -   테스트서버 구축
-    -   데이터 스케줄러 제작
-    -   Kafka Cluster 구축
--   이예진
-    -   `BE`
-    -   API 명세서 작성
-    -   여정 컬렉션 CRUD 구현 (JPA)
-    -   점검 리스트 CRUD 구현 (JPA)
-    -   준비물 리스트 CRUD 구현 (JPA)
-    -   항공편 정보 CRUD 구현 (JPA)
-    -   Swagger
+- 김금환 `팀장`
+  - `BE`, `발표`
+  - ERD 설계
+  - Hadoop, Spark Cluster 구축
+  - Spark에서 Kafka로부터 과거 항공편 데이터를 가져와 Hadoop HDFS에 누적 적재
+  - Redis에 저장된 항공 데이터 Spring Boot와 연동
+- 김성민
+  - `FE`
+  - 피그마 와이어 프레임 설계
+  - PWA
+  - 여정 리스트, 여권, 로밍, 환전 대처 페이지 구현
+  - Adobe illustrator 을 사용한 인천공항 내부 지도 및 주요 편의시설 마커가 포함된 svg 파일 제작
+  - react-panning-zoom libary를 사용한 인천공항 내부 지도 줌, 드래그 기능 구현
+- 우찬명
+  - `FE`
+  - 피그마 와이어 프레임 설계
+  - PWA
+  - tanstack query
+  - redux toolkit 스켈레톤 템플릿 코드 구현
+  - 점검 리스트, 준비물 리스트 구현
+- 임서정
+  - `BE`, `FE`
+  - oauth2, jwt, spring security 활용한 소셜 로그인
+  - 항공, 날씨 데이터 수집
+  - zxing library 활용한 항공편 정보 추출 및 가공
+  - UCC 편집
+- 오상훈
+  - `Infra`, `BE`, `ML`
+  - 데이터 수집
+  - 배포 자동화
+  - 테스트서버 구축
+  - 데이터 스케줄러 제작
+  - Kafka Cluster 구축
+- 이예진
+  - `BE`
+  - API 명세서 작성
+  - 여정 컬렉션 CRUD 구현 (JPA)
+  - 점검 리스트 CRUD 구현 (JPA)
+  - 준비물 리스트 CRUD 구현 (JPA)
+  - 항공편 정보 CRUD 구현 (JPA)
+  - Swagger
