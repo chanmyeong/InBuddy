@@ -1,0 +1,12 @@
+def build() {
+    // 환경 변수 설정
+    DEV_METADATA = '/var/lib/jenkins/workspace/inbuddy/dev'
+
+    // React App 빌드
+    sh 'cd client && npm i && npm run build'
+    
+    // Container 재시작
+    sh "docker compose -f ${DEV_METADATA}/docker-compose-dev.yml restart dev-fe"
+}
+
+return this

@@ -1,0 +1,14 @@
+def build() {
+    // 환경 변수 설정
+    DEV_METADATA = '/var/lib/jenkins/workspace/inbuddy/dev'
+
+    // 파일 복사
+    sh "rm -f ./scheduler/.env; cp ${DEV_METADATA}/scheduler/.env ./scheduler/.env"
+    sh "rm -f ./scheduler/start.sh; cp ${DEV_METADATA}/scheduler/start.sh ./scheduler/start.sh"
+    sh "pwd"
+    sh "rm -f ./scheduler/wait-for-it.sh; cp ${env.RELEASE_METADATA}/wait-for-it.sh ./scheduler/wait-for-it.sh"
+    // Container 재시작
+    sh "docker compose -f ${DEV_METADATA}/docker-compose-dev.yml restart dev-scheduler"
+}
+
+return this
